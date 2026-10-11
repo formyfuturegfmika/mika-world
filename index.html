@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>A Little World Made for Mika ♡</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<section class="scene on" id="s1"><div class="center">
+<p class="px">A LITTLE PLACE MADE JUST FOR YOU</p>
+<h1>Welcome, Mika.</h1>
+<p class="sub">I have something waiting for you in this little garden.</p>
+<button class="btn" id="enter">ENTER THE GARDEN ♡</button></div></section>
+
+<section class="scene" id="s2">
+<div class="mailtag">You've got mail!</div>
+<button class="mbx" id="mailbox" aria-label="Mailbox, you've got mail"></button></section>
+
+<section class="scene" id="s4"><div class="center">
+<p class="px">For Mika, with love</p>
+<button class="env" id="env" aria-label="Open the envelope"><i>♥</i><b></b></button>
+<div id="envmsg" hidden><p class="sub">Before you read this, I just want you to know that I made this especially for you.</p><br>
+<button class="btn" id="read">READ MY LETTER ♡</button></div></div></section>
+
+<section class="scene" id="s5">
+<div class="wrap">
+<article class="paper" id="letter"></article>
+<div class="ann">
+<p class="px">WAIT! There's something else... 👀</p>
+<p>I hid a little secret somewhere in this website, and it's waiting for you to find it!</p>
+<p>Can you find my hidden message, Mika?</p>
+<p>P.S. Don't worry, I'll give you a little hint. ♡</p>
+<p class="clue">Sometimes, the smallest things hold the sweetest surprises...<br>Look closely at the little stars around you. One of them might be more special than the others.</p>
+</div>
+<div class="lastrow"><button class="btn" id="last">ONE LAST THING... ♡</button></div>
+</div>
+<div id="stars"></div>
+<button id="sp" aria-label="A little star"></button>
+</section>
+
+<section class="scene" id="s6"><div class="final" id="final"></div></section>
+
+<div id="modal" hidden></div>
+<div id="player"><button id="pp" aria-label="Play">▶</button>
+<div class="pm"><span id="pt">Nahanap Kita · Amiel Sol</span>
+<input id="pr" type="range" min="0" max="100" value="0" aria-label="Song progress"><span id="tm">0:00 / 0:00</span></div></div>
+<audio id="au" src="assets/audio/nahahanap-kita.mp3" preload="metadata"></audio>
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body></html>
